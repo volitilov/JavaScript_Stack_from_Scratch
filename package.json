@@ -1,0 +1,43 @@
+{
+  "name": "JavaScript_Stack_from_Scratch",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "start": "gulp"
+  },
+  "dependencies": {
+    "babel-polyfill": "^6.23.0"
+  },
+  "devDependencies": {
+    "babel-loader": "^7.1.1",
+    "babel-preset-latest": "^6.24.1",
+    "del": "^3.0.0",
+    "eslint": "^4.4.0",
+    "eslint-config-airbnb": "^15.1.0",
+    "eslint-plugin-import": "^2.7.0",
+    "eslint-plugin-jsx-a11y": "^6.0.2",
+    "eslint-plugin-react": "^7.1.0",
+    "gulp": "^3.9.1",
+    "gulp-babel": "^6.1.2",
+    "gulp-eslint": "^4.0.0",
+    "webpack-stream": "^3.2.0"
+  },
+  "eslintConfig": {
+    "extends": "airbnb",
+    "env": {
+      "browser": true
+    },
+    "plugins": [
+      "import"
+    ],
+    "rules": {
+      "jsx-a11y/href-no-hash": 0
+    }
+  },
+  "babel": {
+    "presets": [
+      "latest"
+    ]
+  }
+}
