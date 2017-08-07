@@ -1,0 +1,25 @@
+{
+  "extends": [
+    "airbnb",
+    "plugin:flowtype/recommended"
+  ],
+  "env": {
+    "browser": true
+  },
+  "plugins": [
+    "import",
+    "flowtype"
+  ],
+  "rules": {
+    "jsx-a11y/href-no-hash": 0,
+    "new-cap": [
+      2,
+      {
+        "capIsNewExceptions": [
+          "Map",
+          "List"
+        ]
+      }
+    ]
+  }
+}

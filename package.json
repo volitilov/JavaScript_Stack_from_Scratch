@@ -4,40 +4,47 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "start": "gulp"
+    "start": "gulp",
+    "test": "gulp test"
   },
   "dependencies": {
-    "babel-polyfill": "^6.23.0"
+    "babel-polyfill": "^6.23.0",
+    "immutable": "^3.8.1",
+    "prop-types": "^15.5.10",
+    "react": "^15.6.1",
+    "react-dom": "^15.6.1",
+    "react-redux": "^5.0.5",
+    "redux": "^3.7.2",
+    "redux-actions": "^2.2.1",
+    "redux-immutable": "^4.0.0"
   },
   "devDependencies": {
+    "babel-eslint": "^7.2.3",
     "babel-loader": "^7.1.1",
+    "babel-preset-flow": "^6.23.0",
     "babel-preset-latest": "^6.24.1",
+    "babel-preset-react": "^6.24.1",
+    "chai": "^4.1.1",
     "del": "^3.0.0",
     "eslint": "^4.4.0",
     "eslint-config-airbnb": "^15.1.0",
+    "eslint-plugin-flowtype": "^2.35.0",
     "eslint-plugin-import": "^2.7.0",
     "eslint-plugin-jsx-a11y": "^6.0.2",
     "eslint-plugin-react": "^7.1.0",
     "gulp": "^3.9.1",
     "gulp-babel": "^6.1.2",
     "gulp-eslint": "^4.0.0",
+    "gulp-flowtype": "^1.0.0",
+    "gulp-mocha": "^4.3.1",
+    "mocha": "^3.5.0",
     "webpack-stream": "^3.2.0"
-  },
-  "eslintConfig": {
-    "extends": "airbnb",
-    "env": {
-      "browser": true
-    },
-    "plugins": [
-      "import"
-    ],
-    "rules": {
-      "jsx-a11y/href-no-hash": 0
-    }
   },
   "babel": {
     "presets": [
-      "latest"
+      "latest",
+      "react",
+      "flow"
     ]
   }
 }
